@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="blaze.min.css">
+</head>
+<body class="c-text o-container o-container--xlarge u-pillar-box--large">
+
+<header class="o-header">
+	<h1 class="c-heading c-heading--medium">Product Selection</h1>
+</header>
+
+<main>
+	<basket-app></basket-app>
+</main>
+
+<footer class="o-footer u-letter-box--large">
+	Footer
+</footer>
+
+<script type="riot/tag" src="/tags/basket-app.tag"></script>
+<script type="riot/tag" src="/tags/product-list.tag"></script>
+<script type="riot/tag" src="/tags/customer-basket.tag"></script>
+<script src="https://cdn.jsdelivr.net/riot/2.4.0/riot+compiler.min.js"></script>
+<script src="/riotcontrol.js"></script>
+<script src="/js/basketStore.js"></script>
+<script>
+	document.cookie = 'customerID=2222';
+	var basket = new BasketStore();
+	RiotControl.addStore(basket);
+	riot.mount('basket-app');
+</script>
+</body>
+</html>

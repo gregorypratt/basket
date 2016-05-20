@@ -1,0 +1,42 @@
+{
+  "name": "basket",
+  "version": "0.1.0",
+  "description": "basket",
+  "main": "app.js",
+  "scripts": {
+    "test:server": "istanbul cover -- _mocha --timeout=1000",
+    "test:client": "karma start",
+    "test": "npm run test:server && npm run test:client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregorypratt/basket.git"
+  },
+  "author": "Gregory Pratt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gregorypratt/basket/issues"
+  },
+  "homepage": "https://github.com/gregorypratt/basket#readme",
+  "dependencies": {
+    "body-parser": "1.15.1",
+    "cookie-parser": "1.4.1",
+    "express": "4.13.4"
+  },
+  "devDependencies": {
+    "babel-core": "5.8.38",
+    "chai": "3.5.0",
+    "istanbul": "0.4.3",
+    "jquery": "2.2.3",
+    "karma": "0.13.22",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "1.0.1",
+    "karma-mocha-reporter": "2.0.3",
+    "karma-phantomjs-launcher": "1.0.0",
+    "karma-riot": "1.1.0",
+    "mocha": "2.4.5",
+    "phantomjs-prebuilt": "2.1.7",
+    "riot": "2.4.0",
+    "supertest": "1.2.0"
+  }
+}
