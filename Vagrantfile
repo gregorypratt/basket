@@ -9,10 +9,8 @@ Vagrant.configure(2) do |config|
     sudo apt-get install -y phantomjs build-essential curl git python-setuptools ruby
     curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
     sudo apt-get install -y nodejs
-
     cd /vagrant/
     npm i
     npm run test
-    node app
   SHELL
 end
